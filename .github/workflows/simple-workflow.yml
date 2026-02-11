@@ -39,7 +39,7 @@ jobs:
         run: cat dragon.txt
       - uses: actions/upload-artifact@v4
         with:
-          name: Upload my-artifact
+          name: my-artifact
           path: dragon.txt
 
 
@@ -55,7 +55,7 @@ jobs:
       # Runs a single command using the runners shell
       - uses: actions/download-artifact@v5
         with:
-          name: download my-artifact
+          name: my-artifact
           path: dragon.txt
       - name: Text file exists
         run: grep -i "dragon.txt"
