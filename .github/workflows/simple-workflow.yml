@@ -56,9 +56,9 @@ jobs:
       - uses: actions/download-artifact@v5
         with:
           name: my-artifact
-          
-        - name: List of the files 
-          run: ls -la
+
+      - name: List of the files 
+        run: ls -la
           
       # - name: Text file exists
       #   run: grep -i "dragon" dragon.txt
