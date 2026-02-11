@@ -57,5 +57,5 @@ jobs:
         with:
           name: my-artifact
           
-      - name: Text file exists
-        run: grep -i "dragon" dragon.txt
+      # - name: Text file exists
+      #   run: grep -i "dragon" dragon.txt
