@@ -75,5 +75,5 @@ jobs:
         with:
           name: my-artifact
 
-      - name: List of the files 
+      - name: Display content of file 
         run: cat dragon.txt
