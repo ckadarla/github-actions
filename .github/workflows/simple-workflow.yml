@@ -63,7 +63,7 @@ jobs:
       # - name: Text file exists
       #   run: grep -i "dragon" dragon.txt
   deploy_job_3:
-    needs: build
+    needs: test_job_2
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
