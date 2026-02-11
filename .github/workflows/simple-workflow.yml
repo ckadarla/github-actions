@@ -34,5 +34,4 @@ jobs:
       - name: Install Cawsay Program
         run: sudo apt-get install cowsay -y 
       - name: Execeute Cowsay command
-        run: cawsay -f dragon >> dragon.txt
-        
+        run: cowsay -f dragon >> dragon.txt
