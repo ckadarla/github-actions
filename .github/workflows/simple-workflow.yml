@@ -31,3 +31,8 @@ jobs:
 
       - name: List of the files 
         run: ls -la
+      - name: Install Cawsay Program
+        run: sudo apt-get install cowsay -y 
+      - name: Execeute Cowsay command
+        run: cawsay -f dragon >> dragon.txt
+        
