@@ -1,7 +1,7 @@
 name: matrix demo
 on:
-push:
-  workflow_dispatch:
+  push:
+  # workflow_dispatch:
 
 jobs:
   deploy:
