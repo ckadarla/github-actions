@@ -29,5 +29,5 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      -name: List of the files 
-       run: ls -la
+      - name: List of the files 
+        run: ls -la
