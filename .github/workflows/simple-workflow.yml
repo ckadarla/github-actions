@@ -35,6 +35,8 @@ jobs:
         run: sudo apt-get install cowsay -y 
       - name: Execeute Cowsay command
         run: cowsay -f dragon >> dragon.txt
+      - name: Check the file created
+        run: cat dragon.txt
       - uses: actions/upload-artifact@v4
         with:
           name: Upload my-artifact
