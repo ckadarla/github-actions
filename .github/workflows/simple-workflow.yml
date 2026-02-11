@@ -62,3 +62,18 @@ jobs:
           
       # - name: Text file exists
       #   run: grep -i "dragon" dragon.txt
+  deploy_job_3:
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      
+      # Runs a single command using the runners shell
+      - uses: actions/download-artifact@v5
+        with:
+          name: my-artifact
+
+      - name: List of the files 
+        run: cat dragon.txt
